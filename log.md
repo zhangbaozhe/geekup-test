@@ -1,4 +1,6 @@
 # GeekUp Project Log
+## 2021/05/30
+1. TODO: 选择tkinter作为GUI开发？
 ## 2021/05/28
 1. 更新了文件树
 2. TODO：学习PyQt或者PySide搭建GUI环境
