@@ -1,6 +1,6 @@
 import serial
 
-serial_6 = serial.Serial('COM7', 9600, timeout=0.1)
+serial_6 = serial.Serial('/dev/cu.wchusbserial1440', 9600, timeout=0.1)
 
 while True:
     if serial_6.in_waiting:

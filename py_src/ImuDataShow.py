@@ -16,7 +16,7 @@ plt.grid(True)
 ax.set_ylabel("angle")
 ax.set_xlabel("time")
 
-ser = serial.Serial('COM4',57600)
+ser = serial.Serial('/dev/cu.wchusbserial1440', 9600)
 
 
 def update(frames):

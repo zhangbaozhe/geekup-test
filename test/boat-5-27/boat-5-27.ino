@@ -14,7 +14,7 @@ int pos2 = 73;    //船帆-舵机角度
 void setup() {
   /*mySerial.begin(9600);*/
   Serial.begin(9600);    //设置蓝牙传输速率
-  // Serial.println("Yep,I am the SoftwareSerail!");  // 检测蓝牙连接
+  Serial.println("Yep,I am the SoftwareSerail!");  // 检测蓝牙连接
     
   rudder.attach(9);     //将船舵与pin9连接
   sail.attach(10);     //将船帆与pin10连接
@@ -66,7 +66,7 @@ void loop() {
     Serial.println((float)JY901.stcAngle.Angle[2]/32768*180);
     delay(200);
   }
-   JY901.GetAngle();   //获取角度信息
-    Serial.println((float)JY901.stcAngle.Angle[2]/32768*180);
-    delay(200);
+    // JY901.GetAngle();   //获取角度信息
+    // Serial.println((float)JY901.stcAngle.Angle[2]/32768*180);
+    // delay(200);
 }
